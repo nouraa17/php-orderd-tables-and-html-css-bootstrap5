@@ -1,0 +1,182 @@
+/****************************************start of public classes****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --base-color: #10bc69;
+    --hover-base-color: #34c67f;
+    --background-gray: #f8f8f8;
+    --text-color: #7c7c7c;
+    --dark-text-color: #444444;
+    --rale-font: "Raleway", sans-serif;
+}
+
+.text-secondary{
+    color: #5f687b !important;
+}
+
+.rounded-button{
+    background-color: var(--base-color);
+    color: white;
+    font-family: var(--rale-font);
+    border:none;
+    border-radius: 25px;
+    padding: 10px 35px;
+    margin-right: 20px;
+}
+
+.watch{
+    background: none;
+    border:none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-text-color);
+    transition: all 0.5s;
+}
+.watch i{
+    color: var(--base-color);
+    transition: all 0.5s;
+}
+.watch:hover{
+    color: var(--hover-base-color) ;
+}
+.watch:hover i{
+    color: var(--hover-base-color) ;
+}
+.behind-title{
+    font-family: var(--rale-font);
+    font-weight: 700;
+    font-size: 50px;
+    color: color-mix(in srgb, var(--dark-text-color) 4.5%, transparent);
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    justify-self: center;
+}
+.section-title{
+    font-family: var(--rale-font);
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.section-text{
+    color: var(--dark-text-color);
+}
+/****************************************end of public classes****************************************/
+
+
+/****************************************start of header section****************************************/
+.header{
+    margin-bottom: 60px;
+}
+.header h1{
+    font-size: 50px;
+    font-family: var(--rale-font);
+    font-weight: 700;
+}
+.header h3{
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.header .header-img img{
+    animation: up-down 3s ease-in-out infinite;
+}
+
+@keyframes up-down {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+/****************************************end of header section****************************************/
+
+
+/****************************************start of info section****************************************/
+.info{
+    margin-bottom: 60px;
+}
+.info .card{
+    background-color: var(--background-gray);
+    border: none;
+    transition: all 0.5s; 
+    cursor: pointer;
+}
+.info .card i{
+    color: var(--base-color);
+    font-size: xxx-large;
+}
+.info .card h5{
+    margin: 15px 0;
+    font-family: var(--rale-font);
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.info .card p{
+    font-size: 14px;
+    color: var(--dark-text-color);
+    margin-bottom: 5px;
+}
+.info .card:hover{
+    margin-top: -15px;
+}
+.info .card:hover h5{
+    color: var(--base-color) !important;
+}
+/****************************************end of info section****************************************/
+
+
+/****************************************start of about section****************************************/
+.about{
+    margin: 90px 0;
+}
+
+.about .about-text{
+    color: var(--dark-text-color);
+}
+
+.about .about-text h3{
+    font-weight: 700;
+    font-family: var(--rale-font);
+}
+
+.about .about-text ul li span{
+    color: var(--base-color);
+    margin-right: 12px;
+}
+
+.pulsating-play-btn {
+    width: 15%;
+    height: 21%;
+    background: radial-gradient(var(--base-color) 50%, color-mix(in srgb, var(--base-color) , transparent 75%) 52%);
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+}
+.pulsating-play-btn i{
+    color: white;
+}
+
+.pulsating-play-btn:hover{
+    background: radial-gradient(var(--hover-base-color) 50%, color-mix(in srgb, var(--hover-base-color) , transparent 75%) 52%);
+}
+
+.btn-modal{
+    align-self: flex-start;
+    position: absolute;
+    right: -40px;
+    color: white;
+    background-color: var(--dark-text-color);
+}
+
+/****************************************end of about section****************************************/
+
+
